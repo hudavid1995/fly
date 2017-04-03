@@ -1,3 +1,7 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+wv_scoav:
+    resource: "@WVScoavBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#app:
+#    resource: "@AppBundle/Controller/"
+ #   type:     annotation

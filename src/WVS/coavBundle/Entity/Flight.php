@@ -1,0 +1,171 @@
+<?php
+
+namespace WVS\coavBundle\Entity;
+
+/**
+ * Flight
+ */
+class Flight
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $departure;
+
+    /**
+     * @var string
+     */
+    private $arrival;
+
+    /**
+     * @var string
+     */
+    private $pilote;
+
+    /**
+     * @var int
+     */
+    private $freeSeats;
+
+    /**
+     * @var \DateTime
+     */
+    private $takeofTime;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set departure
+     *
+     * @param string $departure
+     *
+     * @return Flight
+     */
+    public function setDeparture($departure)
+    {
+        $this->departure = $departure;
+
+        return $this;
+    }
+
+    /**
+     * Get departure
+     *
+     * @return string
+     */
+    public function getDeparture()
+    {
+        return $this->departure;
+    }
+
+    /**
+     * Set arrival
+     *
+     * @param string $arrival
+     *
+     * @return Flight
+     */
+    public function setArrival($arrival)
+    {
+        $this->arrival = $arrival;
+
+        return $this;
+    }
+
+    /**
+     * Get arrival
+     *
+     * @return string
+     */
+    public function getArrival()
+    {
+        return $this->arrival;
+    }
+
+    /**
+     * Set pilote
+     *
+     * @param string $pilote
+     *
+     * @return Flight
+     */
+    public function setPilote($pilote)
+    {
+        $this->pilote = $pilote;
+
+        return $this;
+    }
+
+    /**
+     * Get pilote
+     *
+     * @return string
+     */
+    public function getPilote()
+    {
+        return $this->pilote;
+    }
+
+    /**
+     * Set freeSeats
+     *
+     * @param integer $freeSeats
+     *
+     * @return Flight
+     */
+    public function setFreeSeats($freeSeats)
+    {
+        $this->freeSeats = $freeSeats;
+
+        return $this;
+    }
+
+    /**
+     * Get freeSeats
+     *
+     * @return int
+     */
+    public function getFreeSeats()
+    {
+        return $this->freeSeats;
+    }
+
+    /**
+     * Set takeofTime
+     *
+     * @param \DateTime $takeofTime
+     *
+     * @return Flight
+     */
+    public function setTakeofTime($takeofTime)
+    {
+        $this->takeofTime = $takeofTime;
+
+        return $this;
+    }
+
+    /**
+     * Get takeofTime
+     *
+     * @return \DateTime
+     */
+    public function getTakeofTime()
+    {
+        return $this->takeofTime;
+    }
+}
+

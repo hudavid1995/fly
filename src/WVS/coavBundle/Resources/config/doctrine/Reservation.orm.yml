@@ -1,0 +1,18 @@
+WVS\coavBundle\Entity\Reservation:
+    type: entity
+    table: null
+    repositoryClass: WVS\coavBundle\Repository\ReservationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        nbSeats:
+            type: integer
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,24 @@
+wv_scoav_planemodel:
+    resource: "@WVScoavBundle/Resources/config/routing/planemodel.yml"
+    prefix:   /planemodel
+
+
+wv_scoav_reservation:
+        resource: "@WVScoavBundle/Resources/config/routing/reservation.yml"
+        prefix:   /reservation
+
+
+wv_scoav_flight:
+        resource: "@WVScoavBundle/Resources/config/routing/flight.yml"
+        prefix:   /flight
+
+wv_scoav_terrain:
+        resource: "@WVScoavBundle/Resources/config/routing/terrain.yml"
+        prefix:   /terrain
+
+
+
+wv_scoav_homepage:
+    path:     /
+    defaults: { _controller: WVScoavBundle:Default:index }
+
