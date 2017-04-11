@@ -16,3 +16,8 @@ WVS\coavBundle\Entity\Reservation:
             type: integer
             nullable: true
     lifecycleCallbacks: {  }
+
+    manyToMany:
+        passengers:
+            targetEntity: User
+            mappedBy: reservation

@@ -26,3 +26,8 @@ WVS\coavBundle\Entity\Terrain:
             type: string
             length: 255
     lifecycleCallbacks: {  }
+
+    oneToMany:
+        departures:
+          targetEntity: WVS\coavBundle\Entity\Flight
+          mappedBy: departure

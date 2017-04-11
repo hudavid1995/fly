@@ -1,0 +1,20 @@
+WVS\coavBundle\Entity\User:
+    type: entity
+    table: null
+    repositoryClass: WVS\coavBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '255'
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+        reservations:
+            targetEntity: WVS\coavBundle\Entity\Reservation
+            inversedBy: passengers
